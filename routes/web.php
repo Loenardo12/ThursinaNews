@@ -2,11 +2,21 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\newscontroller;
-Route::get('/', function () {
-    // return view('index');
-    return redirect('/news');
-});
+use App\Http\Controllers\newsapitube;
+// Route::get('/', function () {
+//        return redirect('/news');
+// });
 
-Route::get('/news',[newsController::class,'index'])->name('index');
+// Route::get('/news',[newsController::class,'us'])->name('us');
+// Route::get('/news/platform', [NewsController::class, 'platform'])->name('news.platform');
+// Route::get('/news/entertain', [NewsController::class, 'entertain'])->name('news.entertain');
+// Route::get('/news/health', [NewsController::class, 'health'])->name('news.health');
+// Route::get('/news/science', [NewsController::class, 'science'])->name('news.science');
+// Route::get('/news/sports', [NewsController::class, 'sports'])->name('news.sports');
+// Route::get('/news/tech', [NewsController::class, 'tech'])->name('news.tech');
+// Route::get('/news/business', [NewsController::class, 'business'])->name('news.business');
+// Route::get('/news/general', [NewsController::class, 'general'])->name('news.general');
 
 
+
+Route::get('/news', [newsapitube::class, 'makeRequest'])->name('news.index');

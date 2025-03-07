@@ -82,12 +82,12 @@
         </div>
     </section>
 
-    {{-- lastest news header --}}
+     {{-- lastest world news header --}}
     <section id="Up-to-date" class="max-w-[1130px] mx-auto flex flex-col gap-[30px] mt-[70px]">
         <div class="flex justify-between items-center">
             <h2 class="font-bold text-[26px] leading-[39px]">
                 Latest Hot News <br />
-                Good for Curiousity
+                world News
             </h2>
             <p
                 class="badge-orange rounded-full p-[8px_18px] bg-[#FFECE1] font-bold text-sm leading-[21px] text-[#FF6B18] w-fit">
@@ -98,6 +98,55 @@
 
         {{-- lastest news content --}}
         <div class="grid grid-cols-3 gap-[30px]">
+            @foreach ($news['results'] as $article)
+
+                    <div
+                        class="rounded-[20px] ring-1 ring-[#EEF0F7] p-[26px_20px] flex flex-col gap-4 hover:ring-2 hover:ring-[#FF6B18] transition-all duration-300 bg-white">
+                        <div
+                            class="thumbnail-container w-full h-[200px] rounded-[20px] flex shrink-0 overflow-hidden relative">
+                            <a href="{{ $article['href'] }}" target="_blank" class="card-news">
+                            <p
+                                class="badge-white absolute top-5 left-5 rounded-full p-[8px_18px] bg-white font-bold text-xs leading-[18px]">
+                                {{ $article['source']['location']['country_name'] }}
+                           </p>
+                            @if (!empty($article['image']))
+                            <img src="{{ $article['image'] }}" class="object-cover w-full h-full" alt="thumbnail">
+                        @else
+                            <img src="https://via.placeholder.com/300x200?text=No+Image" class="card-img-top" alt="No Image Available">
+                        @endif
+
+                    </a></div>
+                        <div class="card-info flex flex-col gap-[6px]">
+                            <h3 class="font-bold text-lg leading-[27px]">{{ $article['title'] }}</h3>
+                            <p class="text-sm leading-[21px] text-[#A3A6AE]">Author: <a href="{{ $article['source']['home_page_url'] }}" target="_blank">{{ $article['source']['domain'] }}</a></p>
+                            <p class="text-sm leading-[21px] text-[#A3A6AE]">Publish Date:
+                                {{ \Carbon\Carbon::parse($article['published_at'])->format('Y-m-d H:i') }}</p>
+                        </div>
+                    </div>
+
+            @endforeach
+
+
+        </div>
+    </section>
+
+
+    {{-- lastest US news header --}}
+    <section id="Up-to-date" class="max-w-[1130px] mx-auto flex flex-col gap-[30px] mt-[70px]">
+        <div class="flex justify-between items-center">
+            <h2 class="font-bold text-[26px] leading-[39px]">
+                Latest Hot News <br />
+                US News
+            </h2>
+            <p
+                class="badge-orange rounded-full p-[8px_18px] bg-[#FFECE1] font-bold text-sm leading-[21px] text-[#FF6B18] w-fit">
+                UP TO DATE</p>
+        </div>
+
+
+
+        {{-- lastest news content --}}
+        {{-- <div class="grid grid-cols-3 gap-[30px]">
             @foreach ($newsdata as $news)
                 <a href="details.html" class="card-news">
                     <div
@@ -121,7 +170,7 @@
             @endforeach
 
 
-        </div>
+        </div> --}}
     </section>
 
     {{-- best authors --}}
@@ -129,12 +178,15 @@
         <div class="flex flex-col text-center gap-[14px] items-center">
             <p
                 class="badge-orange rounded-full p-[8px_18px] bg-[#FFECE1] font-bold text-sm leading-[21px] text-[#FF6B18] w-fit">
-                BEST AUTHORS</p>
+                BEST PLATFORM</p>
             <h2 class="font-bold text-[26px] leading-[39px]">
                 Explore All Masterpieces <br />
                 Written by People
             </h2>
         </div>
+
+  {{-- @foreach ($newsplat as $source) --}}
+        {{-- <h2>{{ $source['name'] }}</h2> --}}
         <div class="grid grid-cols-6 gap-[30px]">
             <a href="author.html" class="card-authors">
                 <div
@@ -143,7 +195,7 @@
                         <img src="assets/images/photos/photo.png" class="object-cover w-full h-full" alt="avatar" />
                     </div>
                     <div class="flex flex-col gap-1 text-center">
-                        <p class="font-semibold">Junior Parrito</p>
+                        <p class="font-semibold">{{ $source['name'] ?? 'Nama Tidak Ada' }}</p>
                         <p class="text-sm leading-[21px] text-[#A3A6AE]">3,492 News</p>
                     </div>
                 </div>
@@ -209,6 +261,10 @@
                 </div>
             </a>
         </div>
+    {{-- @endforeach --}}
+
+
+
     </section>
 
     {{-- advertisement --}}
