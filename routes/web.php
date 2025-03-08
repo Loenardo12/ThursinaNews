@@ -19,4 +19,26 @@ use App\Http\Controllers\newsapitube;
 
 
 
-Route::get('/news', [newsapitube::class, 'makeRequest'])->name('news.index');
+Route::get('/', [newsapitube::class, 'makeRequest'])->name('news.index');
+
+
+Route::get('/author', function () {
+    return view('author');
+});
+
+
+Route::get('/author', function () {
+    return view('author');
+});
+
+Route::get('/category', function () {
+    return view('categoryPage');
+});
+
+Route::get('/details', function () {
+    return view('details');
+});
+
+Route::get('/search', function () {
+    return view('searchPage');
+});

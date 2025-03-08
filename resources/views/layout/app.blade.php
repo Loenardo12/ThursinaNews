@@ -16,7 +16,7 @@
     <header>
     <nav id="Navbar" class="max-w-[1130px] mx-auto flex justify-between items-center mt-[30px]">
         <div class="logo-container flex gap-[30px] items-center">
-            <a href="index.html" class="flex shrink-0">
+            <a href="/search" class="flex shrink-0">
                 <img src="assets/images/logos/logo.png" alt="logo"width="70" height="70"
                     style="object-fit: contain ;">
                 <h1
@@ -54,7 +54,7 @@
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/information.png" alt="icon" />
             </div>
-            <span>General</span>
+            <span>Politics</span>
         </a>
         <a href="categoryPage.html"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
@@ -83,6 +83,20 @@
                 <img src="assets/images/icons/technology.png" alt="icon" />
             </div>
             <span>Technology</span>
+        </a>
+        <a href="categoryPage.html"
+            class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
+            <div class="w-6 h-6 flex shrink-0">
+                <img src="assets/images/icons/global.svg" alt="icon" />
+            </div>
+            <span>World</span>
+        </a>
+        <a href="categoryPage.html"
+            class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
+            <div class="w-6 h-6 flex shrink-0">
+                <img src="assets/images/icons/global.svg" alt="icon" />
+            </div>
+            <span>Islamic</span>
         </a>
     </nav>
     </header>

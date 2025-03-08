@@ -106,76 +106,7 @@
 						</div>
 					</div>
 				</a>
-				<a href="details.html" class="card">
-					<div class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-						<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-							<div class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-								<p class="text-xs leading-[18px] font-bold">ENTERTAINMENT</p>
-							</div>
-							<img src="assets/images/thumbnails/th-sunbathe.png" alt="thumbnail photo" class="w-full h-full object-cover" />
-						</div>
-						<div class="flex flex-col gap-[6px]">
-							<h3 class="text-lg leading-[27px] font-bold">Terjadi demo pada ibu kota jakarta membuat macet parah</h3>
-							<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-						</div>
-					</div>
-				</a>
-				<a href="details.html" class="card">
-					<div class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-						<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-							<div class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-								<p class="text-xs leading-[18px] font-bold">ENTERTAINMENT</p>
-							</div>
-							<img src="assets/images/thumbnails/th-cyclist.png" alt="thumbnail photo" class="w-full h-full object-cover" />
-						</div>
-						<div class="flex flex-col gap-[6px]">
-							<h3 class="text-lg leading-[27px] font-bold">Bersepeda dapat membuat diri menjadi lebih baik lagi</h3>
-							<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-						</div>
-					</div>
-				</a>
-				<a href="details.html" class="card">
-					<div class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-						<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-							<div class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-								<p class="text-xs leading-[18px] font-bold">ENTERTAINMENT</p>
-							</div>
-							<img src="assets/images/thumbnails/th-bulldozer.png" alt="thumbnail photo" class="w-full h-full object-cover" />
-						</div>
-						<div class="flex flex-col gap-[6px]">
-							<h3 class="text-lg leading-[27px] font-bold">Bersepeda dapat membuat diri menjadi lebih baik lagi</h3>
-							<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-						</div>
-					</div>
-				</a>
-				<a href="details.html" class="card">
-					<div class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-						<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-							<div class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-								<p class="text-xs leading-[18px] font-bold">ENTERTAINMENT</p>
-							</div>
-							<img src="assets/images/thumbnails/th-key.png" alt="thumbnail photo" class="w-full h-full object-cover" />
-						</div>
-						<div class="flex flex-col gap-[6px]">
-							<h3 class="text-lg leading-[27px] font-bold">Beberapa artis ini merayakan ultah di tengah hutan raya</h3>
-							<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-						</div>
-					</div>
-				</a>
-				<a href="details.html" class="card">
-					<div class="flex flex-col gap-4 p-[26px_20px] transition-all duration-300 ring-1 ring-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18] rounded-[20px] overflow-hidden bg-white">
-						<div class="thumbnail-container h-[200px] relative rounded-[20px] overflow-hidden">
-							<div class="badge absolute left-5 top-5 bottom-auto right-auto flex p-[8px_18px] bg-white rounded-[50px]">
-								<p class="text-xs leading-[18px] font-bold">POLITIC</p>
-							</div>
-							<img src="assets/images/thumbnails/th-demonstration.png" alt="thumbnail photo" class="w-full h-full object-cover" />
-						</div>
-						<div class="flex flex-col gap-[6px]">
-							<h3 class="text-lg leading-[27px] font-bold">Terjadi demo pada ibu kota jakarta membuat macet parah</h3>
-							<p class="text-sm leading-[21px] text-[#A3A6AE]">12 Jun, 2024</p>
-						</div>
-					</div>
-				</a>
+				
 			</div>
 		</section>
 	</body>

@@ -1,14 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
-class newsapitube extends Controller
+use Illuminate\Http\Request;
+
+class indonesia extends Controller
 {
-    public function makeRequest(Request $request)
+    public function getIndonesiaNews(Request $request)
     {
-        $url = "https://api.apitube.io/v1/news/everything?api_key=api_live_ew3bRhaMn6N9SEqva3ZAxZISQw0WlAZvYOPQxlJhTxQA3SWyxI9fXG6oG3Yz";
+        $url = "https://api.apitube.io/v1/news/everything?source.country.code=id&api_key=api_live_ew3bRhaMn6N9SEqva3ZAxZISQw0WlAZvYOPQxlJhTxQA3SWyxI9fXG6oG3Yz";
 
         $response = Http::get($url);
 
@@ -22,8 +22,6 @@ class newsapitube extends Controller
 
         $newsData = $response->json();
 
-        return view('index', ['news' => $newsData]);
+        return view('index', ['indonesia' => $newsData]);
     }
-
-
 }
