@@ -23,7 +23,7 @@
                     style="text-align: center; font-weight: bold; font-family: 'Poppins', sans-serif; padding-top: 20px;padding-left: 20px;padding-right: 20px;">
                     Thursina News</h1>
                 <div class="h-12 border border-[#E8EBF4]"></div>
-                <form action="searchPage.html"
+                <form action="/search"
                     class="w-[450px] flex items-center rounded-full border border-[#E8EBF4] p-[12px_20px] gap-[10px] focus-within:ring-2 focus-within:ring-[#FF6B18] transition-all duration-300">
                     <button type="submit" class="w-5 h-5 flex shrink-0">
                         <img src="assets/images/icons/search-normal.svg" alt="icon" />

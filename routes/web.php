@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\searchcontroller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\newscontroller;
 use App\Http\Controllers\newsapitube;
@@ -20,7 +21,7 @@ use App\Http\Controllers\newsapitube;
 
 
 Route::get('/', [newsapitube::class, 'makeRequest'])->name('news.index');
-
+Route::get('/search', [SearchController::class, 'search'])->name('news.search');
 
 Route::get('/author', function () {
     return view('author');

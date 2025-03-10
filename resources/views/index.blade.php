@@ -1,6 +1,7 @@
 @extends('layout.app')
 
 @section('content')
+
     {{-- carousel --}}
     <section id="Featured" class="mt-[30px]">
         <div class="main-carousel w-full">
@@ -82,7 +83,7 @@
         </div>
     </section>
 
-
+@include('partials.sidebar')
 
     {{-- lastest world news header --}}
     <section id="Up-to-date" class="max-w-[1130px] mx-auto flex flex-col gap-[30px] mt-[70px]">
