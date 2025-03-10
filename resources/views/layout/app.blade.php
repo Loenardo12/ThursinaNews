@@ -35,68 +35,75 @@
         </div>
     </nav>
     <nav id="Category" class="max-w-[1130px] mx-auto flex justify-center items-center gap-4 mt-[30px]">
-        <a href="categoryPage.html"
+        <a href="/news/business"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/status-up.svg" alt="icon" />
             </div>
             <span>Business</span>
         </a>
-        <a href="categoryPage.html"
+        <a href="/news/entertain"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/global.svg" alt="icon" />
             </div>
             <span>Entertainment</span>
         </a>
-        <a href="categoryPage.html"
+        <a href="/news/politics"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/information.png" alt="icon" />
             </div>
             <span>Politics</span>
         </a>
-        <a href="categoryPage.html"
+        <a href="/news/health"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/heart.svg" alt="icon" />
             </div>
             <span>Health</span>
         </a>
-        <a href="categoryPage.html"
+        <a href="/news/science"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/atom.png" alt="icon" />
             </div>
             <span>science</span>
         </a>
-        <a href="categoryPage.html"
+        <a href="/news/sports"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/sports.png" alt="icon" />
             </div>
             <span>Sport</span>
         </a>
-        <a href="categoryPage.html"
+        <a href="/news/tech"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/technology.png" alt="icon" />
             </div>
             <span>Technology</span>
         </a>
-        <a href="categoryPage.html"
-            class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
-            <div class="w-6 h-6 flex shrink-0">
-                <img src="assets/images/icons/global.svg" alt="icon" />
-            </div>
-            <span>World</span>
-        </a>
-        <a href="categoryPage.html"
+              <a href="/news/islamic"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/global.svg" alt="icon" />
             </div>
             <span>Islamic</span>
+        </a>
+          <a href="/news/international"
+            class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
+            <div class="w-6 h-6 flex shrink-0">
+                <img src="assets/images/icons/global.svg" alt="icon" />
+            </div>
+            <span>International</span>
+        </a>
+          <a href="/news/local"
+            class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
+            <div class="w-6 h-6 flex shrink-0">
+                <img src="assets/images/icons/global.svg" alt="icon" />
+            </div>
+            <span>Local</span>
         </a>
     </nav>
     </header>
