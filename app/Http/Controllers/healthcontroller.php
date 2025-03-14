@@ -17,11 +17,11 @@ class healthcontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.health', ['error' => $errorMessage]);
+            return view('health', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.health', ['news' => $newsData]);
+        return view('health', ['news' => $newsData]);
     }
 }

@@ -64,7 +64,7 @@
 				Explore Hot Trending <br />
 				Good News Today
 			</h1>
-			<form action="{{route ('news.search')}}" method="GET">
+			{{-- <form action="{{route ('news.search')}}" method="GET"> --}}
     <label for="search-bar" class="w-[500px] flex p-[12px_20px] transition-all duration-300 gap-[10px] ring-1 ring-[#E8EBF4] focus-within:ring-2 focus-within:ring-[#FF6B18] rounded-[50px] group">
         <div class="w-5 h-5 flex shrink-0">
             <img src="assets/images/icons/search-normal.svg" alt="icon" />

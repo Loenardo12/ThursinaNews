@@ -17,11 +17,11 @@ class entertaincontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.entertain', ['error' => $errorMessage]);
+            return view('entertain', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.entertain', ['news' => $newsData]);
+        return view('entertain', ['news' => $newsData]);
     }
 }

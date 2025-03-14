@@ -17,11 +17,11 @@ class siencecontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.sience', ['error' => $errorMessage]);
+            return view('sience', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.sience', ['news' => $newsData]);
+        return view('sience', ['news' => $newsData]);
     }
 }

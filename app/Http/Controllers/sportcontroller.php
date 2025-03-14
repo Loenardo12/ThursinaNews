@@ -17,11 +17,11 @@ class sportcontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.sport', ['error' => $errorMessage]);
+            return view('sport', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.sport', ['news' => $newsData]);
+        return view('sport', ['news' => $newsData]);
     }
 }

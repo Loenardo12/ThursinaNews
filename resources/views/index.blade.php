@@ -13,7 +13,7 @@
                 <div class="card-detail max-w-[1130px] w-full mx-auto flex items-end justify-between pb-10 relative z-20">
                     <div class="flex flex-col gap-[10px]">
                         <p class="text-white">Featured</p>
-                        <a href="details.html"
+                        <a href="/details"
                             class="font-bold text-4xl leading-[45px] text-white two-lines hover:underline transition-all duration-300">Generation
                             Z Prefer Remote Working Than Big Salary</a>
                         <p class="text-white">12 Jun, 2024 • Business</p>
@@ -82,8 +82,7 @@
             </div>
         </div>
     </section>
-
-@include('partials.sidebar')
+{{-- @include('partials.sidebar') --}}
 
     {{-- lastest world news header --}}
     <section id="Up-to-date" class="max-w-[1130px] mx-auto flex flex-col gap-[30px] mt-[70px]">
@@ -144,7 +143,7 @@
 
 
     {{-- best authors --}}
-    <section id="Best-authors" class="max-w-[1130px] mx-auto flex flex-col gap-[30px] mt-[70px]">
+    {{-- <section id="Best-authors" class="max-w-[1130px] mx-auto flex flex-col gap-[30px] mt-[70px]">
         <div class="flex flex-col text-center gap-[14px] items-center">
             <p
                 class="badge-orange rounded-full p-[8px_18px] bg-[#FFECE1] font-bold text-sm leading-[21px] text-[#FF6B18] w-fit">
@@ -153,11 +152,11 @@
                 Explore All Masterpieces <br />
                 Written by People
             </h2>
-        </div>
+        </div> --}}
 
         {{-- @foreach ($newsplat as $source) --}}
         {{-- <h2>{{ $source['name'] }}</h2> --}}
-        <div class="grid grid-cols-6 gap-[30px]">
+        {{-- <div class="grid grid-cols-6 gap-[30px]">
             <a href="author.html" class="card-authors">
                 <div
                     class="rounded-[20px] border border-[#EEF0F7] p-[26px_20px] flex flex-col items-center gap-4 hover:ring-2 hover:ring-[#FF6B18] transition-all duration-300">
@@ -230,7 +229,7 @@
                     </div>
                 </div>
             </a>
-        </div>
+        </div> --}}
         {{-- @endforeach --}}
 
 
@@ -617,4 +616,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
 @endsection

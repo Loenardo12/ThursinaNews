@@ -17,11 +17,11 @@ class islamiccontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.islamic', ['error' => $errorMessage]);
+            return view('islamic', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.islamic', ['news' => $newsData]);
+        return view('islamic', ['news' => $newsData]);
     }
 }

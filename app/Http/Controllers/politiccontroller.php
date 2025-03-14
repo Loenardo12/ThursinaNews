@@ -17,11 +17,11 @@ class politiccontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.politic', ['error' => $errorMessage]);
+            return view('politic', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.politic', ['news' => $newsData]);
+        return view('politic', ['news' => $newsData]);
     }
 }

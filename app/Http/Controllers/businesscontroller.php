@@ -8,7 +8,7 @@ class businesscontroller extends Controller
 {
     public function business(Request $request)
     {
-        $url = "https://api.apitube.io/v1/news/everything?category.name=business&api_key=api_live_ew3bRhaMn6N9SEqva3ZAxZISQw0WlAZvYOPQxlJhTxQA3SWyxI9fXG6oG3Yz";
+        $url = "https://api.apitube.io/v1/news/top-headlines?category.name=Business&api_key=api_live_ew3bRhaMn6N9SEqva3ZAxZISQw0WlAZvYOPQxlJhTxQA3SWyxI9fXG6oG3Yz";
 
         $response = Http::get($url);
 
@@ -17,11 +17,11 @@ class businesscontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.busines', ['error' => $errorMessage]);
+            return view('busines', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.busines', ['news' => $newsData]);
+        return view('busines', ['news' => $newsData]);
     }
 }

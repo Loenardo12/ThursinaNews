@@ -17,11 +17,11 @@ class technologycontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.technology', ['error' => $errorMessage]);
+            return view('technology', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.technology', ['news' => $newsData]);
+        return view('technology', ['news' => $newsData]);
     }
 }

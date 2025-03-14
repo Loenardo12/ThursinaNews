@@ -17,11 +17,11 @@ class localcontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.local', ['error' => $errorMessage]);
+            return view('local', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.local', ['news' => $newsData]);
+        return view('local', ['news' => $newsData]);
     }
 }

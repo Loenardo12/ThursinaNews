@@ -17,11 +17,11 @@ class internationalcontroller extends Controller
                 ? "Client Error: " . $response->status()
                 : "Server Error: " . $response->status();
 
-            return view('category.international', ['error' => $errorMessage]);
+            return view('international', ['error' => $errorMessage]);
         }
 
         $newsData = $response->json();
 
-        return view('category.international', ['news' => $newsData]);
+        return view('international', ['news' => $newsData]);
     }
 }

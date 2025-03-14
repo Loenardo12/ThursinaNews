@@ -38,3 +38,4 @@ Route::get('/details', function () {
 Route::get('/search', function () {
     return view('searchPage');
 });
+
