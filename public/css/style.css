@@ -315,6 +315,10 @@ xfilter
 
 -------------------------------- */
 .cd-filter {
+    display: block !important;
+    visibility: visible !important;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
   position: absolute;
   top: 0;
   left: 0;

@@ -8,9 +8,9 @@ class sportcontroller extends Controller
 {
     public function sport(Request $request)
     {
-        $url = "https://api.apitube.io/v1/news/everything?category.name=sport&api_key=api_live_ew3bRhaMn6N9SEqva3ZAxZISQw0WlAZvYOPQxlJhTxQA3SWyxI9fXG6oG3Yz";
+        $newskey= env ('NEWS_API_TUBE_KEY');
 
-        $response = Http::get($url);
+        $response = Http::get('https://api.apitube.io/v1/news/everything?language.code=en&category.id=medtop:15000000&api_key='.$newskey);
 
         if ($response->failed()) {
             $errorMessage = $response->clientError()
@@ -22,6 +22,6 @@ class sportcontroller extends Controller
 
         $newsData = $response->json();
 
-        return view('sport', ['news' => $newsData]);
+        return view('sports', ['news' => $newsData]);
     }
 }

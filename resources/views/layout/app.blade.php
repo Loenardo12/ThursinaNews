@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="{{ asset('css/output.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+
+
+
     <title>Thursina News</title>
 </head>
 
@@ -78,7 +79,7 @@
             </div>
             <span>Sport</span>
         </a>
-        <a href="/news/tech"
+        <a href="/news/technology"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/technology.png" alt="icon" />
@@ -92,14 +93,7 @@
             </div>
             <span>Islamic</span>
         </a>
-          <a href="/news/international"
-            class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
-            <div class="w-6 h-6 flex shrink-0">
-                <img src="assets/images/icons/global.svg" alt="icon" />
-            </div>
-            <span>International</span>
-        </a>
-          <a href="/news/local"
+                    <a href="/news/local"
             class="rounded-full p-[12px_22px] flex gap-[10px] font-semibold transition-all duration-300 border border-[#EEF0F7] hover:ring-2 hover:ring-[#FF6B18]">
             <div class="w-6 h-6 flex shrink-0">
                 <img src="assets/images/icons/global.svg" alt="icon" />
@@ -107,8 +101,11 @@
             <span>Local</span>
         </a>
     </nav>
+    @include('partials.carousel')
+
     </header>
     <main>
+
         @yield('content')
     </main>
 </body>
