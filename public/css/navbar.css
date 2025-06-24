@@ -1,0 +1,133 @@
+/* Body */
+.custom-body {
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 72px;
+    background-color: #e4f1ff;
+    color: #1E293B; /* Slate-800 */
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 12px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    object-fit: contain;
+    width: 40px;
+    height: 40px;
+}
+
+.logo-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2563EB; /* Blue-600 */
+}
+
+/* Separator */
+.separator {
+    height: 40px;
+    border-left: 1px solid #E0E7FF;
+    margin: 0 16px;
+}
+
+/* Search Form */
+.search-form {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E0E7FF;
+    border-radius: 9999px;
+    padding: 10px 20px;
+    gap: 10px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.search-form:focus-within {
+    box-shadow: 0 0 0 2px #2563EB;
+}
+
+.search-button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.search-input {
+    width: 100%;
+    font-weight: 500;
+    font-size: 0.95rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #1E293B;
+}
+
+.search-input::placeholder {
+    font-weight: 400;
+    color: #94A3B8;
+}
+
+/* Category Navigation */
+.category-nav {
+    width: 100%;
+    margin: 24px auto 0;
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.category-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 9999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background-color: #ffffff;
+    border: 1px solid #E0E7FF;
+    color: #2563EB;
+    transition: all 0.3s ease;
+}
+
+.category-link:hover {
+    background-color: #EFF6FF;
+    color: #1D4ED8;
+    box-shadow: 0 0 0 2px #93C5FD;
+}
+
+/* Icons in Category */
+.category-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-shrink: 0;
+    filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}

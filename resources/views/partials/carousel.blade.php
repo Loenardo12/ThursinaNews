@@ -1,29 +1,27 @@
-<section id="Featured" class="mt-[30px]">
+<section id="Featured" class="featured-section">
     <div class="relative">
         <!-- Carousel Wrapper -->
-        <div id="carouselContainer"
-            class="flex overflow-x-hidden scroll-smooth transition-all duration-500 snap-x snap-mandatory relative w-full">
+        <div id="carouselContainer" class="carousel-container">
             @foreach (array_slice($news['results'], 0, 3) as $article)
-                <div class="w-full shrink-0 snap-start flex justify-center items-center">
-                    <div class="relative w-[95%] sm:w-[90%] md:w-[85%] lg:w-[80%] xl:w-[75%] h-[250px] sm:h-[350px] md:h-[450px] lg:h-[550px] overflow-hidden rounded-xl">
+                <div class="carousel-item">
+                    <div class="carousel-item-inner">
                         @if (!empty($article['image']))
-                            <img src="{{ $article['image'] }}" class="object-cover w-full h-full rounded-xl" alt="thumbnail">
+                            <img src="{{ $article['image'] }}" alt="thumbnail" class="carousel-image">
                         @else
-                            <img src="https://via.placeholder.com/300x200?text=No+Image" class="object-cover w-full h-full rounded-xl" alt="No Image Available">
+                            <img src="https://via.placeholder.com/300x200?text=No+Image" alt="No Image Available" class="carousel-image">
                         @endif
 
                         <!-- Dark overlay gradient -->
-                        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black z-10 rounded-xl"></div>
+                        <div class="overlay-gradient"></div>
 
                         <!-- Text content inside image -->
-                        <div class="absolute bottom-0 left-0 right-0 z-20 p-4 sm:p-6 md:p-10 text-white">
-                            <div class="flex flex-col gap-2 sm:gap-3 md:gap-4">
-                                <p class="text-sm sm:text-base">{{ $article['source']['location']['country_name'] }}</p>
-                                <a href="{{ $article['source']['home_page_url'] }}"
-                                    class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-snug hover:underline transition-all duration-300">
+                        <div class="carousel-text">
+                            <div class="text-content">
+                                <p class="country-name">{{ $article['source']['location']['country_name'] }}</p>
+                                <a href="{{ $article['source']['home_page_url'] }}" class="article-title">
                                     {{ $article['title'] }}
                                 </a>
-                                <p class="text-xs sm:text-sm md:text-base">{{ \Carbon\Carbon::parse($article['published_at'])->format('Y-m-d H:i') }}</p>
+                                <p class="published-date">{{ \Carbon\Carbon::parse($article['published_at'])->format('Y-m-d H:i') }}</p>
                             </div>
                         </div>
                     </div>
@@ -32,18 +30,17 @@
         </div>
 
         <!-- Navigation Buttons -->
-        <div class="absolute z-30 top-1/2 right-4 sm:right-10 flex items-center gap-4 transform -translate-y-1/2">
-            <button id="prevBtn"
-                class="appearance-none w-[38px] h-[38px] flex items-center justify-center rounded-full shrink-0 ring-1 ring-white hover:ring-2 hover:ring-[#FF6B18] transition-all duration-300">
+        <div class="nav-buttons">
+            <button id="prevBtn" class="nav-button prev-button">
                 <img src="assets/images/icons/arrow.svg" alt="prev" />
             </button>
-            <button id="nextBtn"
-                class="appearance-none w-[38px] h-[38px] flex items-center justify-center rounded-full shrink-0 ring-1 ring-white hover:ring-2 hover:ring-[#FF6B18] transition-all duration-300 rotate-180">
+            <button id="nextBtn" class="nav-button next-button">
                 <img src="assets/images/icons/arrow.svg" alt="next" />
             </button>
         </div>
     </div>
 </section>
+
 
 
 
